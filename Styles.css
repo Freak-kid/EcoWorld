@@ -284,6 +284,12 @@ body, html {
       font-family: 'Cardio';
       }
 
+      header {
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Cardio';
+      }
+
       h5 {
         top: -180px;
         font-size: 50px;
