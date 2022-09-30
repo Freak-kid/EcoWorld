@@ -202,7 +202,6 @@ body, html {
     background-color: #ffffff;
    }
    .box1{
-
       margin-right: 150px;
       border-radius: 5px;
       padding: 15px;
@@ -279,10 +278,18 @@ body, html {
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 20px;
       word-break: break-all;
-      text-align: center;
+      text-align: left;
       font-family: 'Cardio';
+      }
+
+      h5 {
+        top: -180px;
+        font-size: 50px;
+        word-break: break-all;
+        text-align: center;
+        font-family: 'Cardio';
       }
   
       h2 {
