@@ -197,12 +197,19 @@ body, html {
    }
 
    .box{
-    margin-left: 150px;
+    margin-left: 20px;
     padding: 15px;
     background-color: #ffffff;
    }
    .box1{
       margin-right: 150px;
+      border-radius: 5px;
+      padding: 15px;
+      background-color: #ffffff;
+   }
+
+   .boxer {
+      margin-right: 0px;
       border-radius: 5px;
       padding: 15px;
       background-color: #ffffff;
@@ -339,4 +346,12 @@ body, html {
     .small {
       display: relative;
       height: 20px;
+    }
+
+    .table {
+      width: 400px;
+    }
+
+    table, th, td {
+      border: 1px solid #000;
     }

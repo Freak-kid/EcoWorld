@@ -19,37 +19,88 @@
 
         <div class="regform" style="position: relative; top:-150px; font-family: 'Cardio'; color: #000000; font-weight: bold; font-size: 32px"><br><h5><center>Record Weight</center></h5></div>
 
-        <div class="flex-container" style="position: relative; top:-150px;">
-            <div class="serve">
-                <form>
-                    <input type="text" placeholder="enter wtv">
-                </form>
-
-            </div>
-        </div>
         <div class="flex-container" style="position: relative; top: -150px;">
-            <div class="box1">
-              <form>
-              <h1 style="color: #23344A">Map :</h1><br><br>
-                  <iframe width="300" height="300" id="gmap_canvas" 
-                  src="https://maps.google.com/maps?q=taman%20melati%20&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></td>
-              </h3></form>
+            <div class="boxer">
+              <table>
+                <caption>Data for date : ##/##/2022</caption>
+                <tr>
+                    <th>Time</th>
+                    <th>TruckID</th>
+                    <th>Weight(kg)</th>
+                </tr>
+                <tr>
+                    <td>11.40</td>
+                    <td>f235</td>
+                    <td>2398.68</td>
+                </tr>
+                <tr>
+                    <td>11.40</td>
+                    <td>f235</td>
+                    <td>2398.98</td>
+                </tr>
+                <tr>
+                    <td>12.05</td>
+                    <td>v222</td>
+                    <td>1006.79</td>
+                </tr>
+                <tr>
+                    <td>12.06</td>
+                    <td>s113</td>
+                    <td>3005.11</td>
+                </tr>
+                <tr>
+                    <td>12.25</td>
+                    <td>f666</td>
+                    <td>669.01</td>
+                </tr>
+                <tr>
+                    <td>13.01</td>
+                    <td>v235</td>
+                    <td>1011.11</td>
+                </tr>
+                <tr>
+                    <td>14.01</td>
+                    <td>s213</td>
+                    <td>1004.61</td>
+                </tr>
+
+              </table>
             </div>
         
             <div class="box">
         
-              <h1 style="color: #23344A">Enter TruckNo : </h1>
+              <h1 style="font-size: 18px; color: #23344A">Enter TruckNo : </h1>
               <h3 style="font-family:'Arial'">
               <input type="text" placeholder="Eg : f235" style= "background-color: #ffffff; height:30px; width: 200px">&nbsp;&nbsp;&nbsp;
               <br><br>
-              <label class="checkbox" for="myBox">
-                <input class="check" type="checkbox" name="select" id="myBox">
-                <div class="checkbox_">
-                    Routes has been completed.
-                </div>
-              </label>
-              
+              <h1 style="font-size: 18px; color: #23344A">Enter waste weight (kg) : </h1>
+              <h3 style="font-family:'Arial'">
+              <input type="text" placeholder="Eg : 1234.56" style= "background-color: #ffffff; height:30px; width: 200px">&nbsp;&nbsp;&nbsp;
+            </div>
+
+            <div class="box">
+                <label style="font-size: 18px; color: #23344A">Location : Taman Melati center</label>
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=taman%20melati&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:250px;width:250px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:250px;}</style></div></div>
+            </div>
         </div>
+
+        <br><br>
+            <button id="myBtn" class="submit" onclick="myFunction()">SUBMIT</button>
+            <br><center><p id="demo"></p></center>
+      
+            <script>
+      
+              var response = "Data relayed to server, pending schedule update.";
+                function myFunction()
+                {
+                  let text = "Submit data?";
+                  if (confirm(text) == true) {
+                    text = "Data relayed to server, pending schedule update.";
+                  } else {
+                    text = "Make sure data was entered in correct format (weight must be entered in 2 decimal places.";
+                  }
+                  document.getElementById("demo").innerHTML = text;
+                }
+            </script>
     </body>
 </html>
