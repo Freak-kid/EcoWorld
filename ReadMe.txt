@@ -2,9 +2,7 @@ This is a project for Runcloud Technovation October 2022
 
 Group Name : KICT1
 
-Group members : Ahmad Imtiyaz bin Suhaimi (lead programmer)
-                Abdul Hannan bin Zainudin
-                Adam Haikal bin Alias 
+Group members : Ahmad Imtiyaz bin Suhaimi (programmer)
 
 Project title : Waste Management System
 
